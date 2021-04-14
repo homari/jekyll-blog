@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    {% if site.title = "Home" %}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
   </head>
   <body>
     {% include navigation.html %}
